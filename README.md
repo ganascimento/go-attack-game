@@ -25,3 +25,7 @@ In server:
 ```
 npm start
 ```
+
+## Game
+
+![game running](https://raw.githubusercontent.com/ganascimento/go-attack-game/main/game/assets/images/image.png)
