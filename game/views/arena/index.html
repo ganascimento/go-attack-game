@@ -1,6 +1,8 @@
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="../../styles/main.css" />
+        <link rel="stylesheet" href="./style.css" />
 
         <script src="../../assets/peerjs2.min.js"></script>
         <script src="../../assets/socket.io.min.js"></script>
@@ -15,8 +17,42 @@
     </head>
     <body>
         <div class="main">
-            <div class="content">
-                <div id="game"></div>    
+            <div class="content-game">
+                <div id="game"></div>
+                <div class="info">
+                    <div class="commands">
+                        <div class="command">
+                            <div class="command-icon">
+                                <i class="fa fa-arrow-up"></i>
+                            </div>
+                            Move up
+                        </div>
+                        <div class="command">
+                            <div class="command-icon">
+                                <i class="fa fa-arrow-down"></i>
+                            </div>
+                            Move down
+                        </div>
+                        <div class="command">
+                            <div class="command-icon">
+                                <i class="fa fa-arrow-left"></i>
+                            </div>
+                            Move left
+                        </div>
+                        <div class="command">
+                            <div class="command-icon">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                            Move right
+                        </div>
+                        <div class="command">
+                            <div class="command-icon">
+                                F
+                            </div>
+                            Fire
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

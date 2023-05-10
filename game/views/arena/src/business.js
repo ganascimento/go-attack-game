@@ -40,7 +40,8 @@ class Business {
                 positionY: config.y,
                 peerId: peerId,
                 playerId: playerId,
-                color: config.color
+                color: config.color,
+                command: config.command
             }));
 
             const isLocalUser = this.playerId === playerId;

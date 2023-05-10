@@ -11,7 +11,7 @@ class Player {
     playersPosition;
     destroyPlayer;
 
-    constructor({context, positionX, positionY, peerId, playerId, color}) {
+    constructor({context, positionX, positionY, peerId, playerId, color, command}) {
         this.LEFT = 37;
         this.RIGHT = 39;
         this.UP = 38;
@@ -19,12 +19,12 @@ class Player {
         this.FIRE = 70;
         this.MOVE_LENGTH = 10;
         this.rectWidth = 10;
-        this.viewPortWidth = 800;
+        this.viewPortWidth = 500;
         this.viewPortHeight = 500;
         this.context = context;
         this.positionX = positionX;
         this.positionY = positionY;
-        this.handler = this._moveDown;
+        this._getAction(command).setHandler();
         this.peerId = peerId;
         this.playerId = playerId;
         this.playerColor = color;
@@ -221,8 +221,8 @@ class Player {
             const x = player.x;
             const y = player.y;
 
-            if (x < fireX && x + 30 > fireX &&
-                y < fireY && y + 30 > fireY) {
+            if (x < fireX && x + 40 > fireX &&
+                y < fireY && y + 40 > fireY) {
                     this.isShot = false;
                     this.onAction({
                         type: 1,

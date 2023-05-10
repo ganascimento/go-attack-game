@@ -5,25 +5,29 @@ class Utils {
                 return {
                     x: 20,
                     y: 20,
-                    color: 'red'
+                    color: 'red',
+                    command: 40
                 };
             case 2:
                 return {
-                    x: 200,
-                    y: 20,
-                    color: 'blue'
+                    x: 20,
+                    y: 450,
+                    color: 'blue',
+                    command: 38
                 };
             case 3:
                 return {
-                    x: 400,
+                    x: 450,
                     y: 20,
-                    color: 'green'
+                    color: 'green',
+                    command: 40
                 };
             case 4:
                 return {
-                    x: 600,
-                    y: 20,
-                    color: 'black'
+                    x: 450,
+                    y: 450,
+                    color: 'black',
+                    command: 38
                 };
         }
     }

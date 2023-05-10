@@ -1,5 +1,5 @@
 class View {
-    viewPortWidth = 800;
+    viewPortWidth = 500;
     viewPortHeight = 500;
     context;
     players;
