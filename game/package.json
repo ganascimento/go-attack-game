@@ -1,0 +1,15 @@
+{
+  "name": "go-attack-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server --cors ."
+  },
+  "keywords": [],
+  "author": "ganascimento",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
